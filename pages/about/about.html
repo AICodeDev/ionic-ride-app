@@ -1,7 +1,25 @@
 <ion-header>
   <ion-navbar>
-    <ion-title> About </ion-title>
+    <ion-title> Project Plan/Tasks </ion-title>
   </ion-navbar>
 </ion-header>
 
-<ion-content padding> About Us </ion-content>
+<ion-content padding>
+  About Us
+
+  <h6>angular@{{ angularVersion }} | ngx-markdown@{{ ngxMarkdownVersion }}</h6>
+  <br />
+  <textarea class="variable-textarea" [(ngModel)]="markdown"></textarea>
+  <markdown class="variable-binding" [data]="markdown"></markdown>
+
+  <ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+</ion-content>
