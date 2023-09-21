@@ -3,24 +3,15 @@ import { NavController } from 'ionic-angular';
 
 @Component({
   selector: 'page-about',
-  templateUrl: 'about.html'
+  templateUrl: 'about.html',
 })
 export class AboutPage {
-
-  constructor(public navCtrl: NavController) {
-
-  }
+  constructor(public navCtrl: NavController) {}
 
   angularVersion = 0;
   ngxMarkdownVersion = '16.0.0';
 
-  markdown = `## Markdown __rulez__!
----
-
-### Syntax highlight
-\`\`\`typescript
-const language = 'typescript';
-\`\`\`
+  markdown = `
 
 ### Lists
 1. Ordered list
@@ -29,6 +20,8 @@ const language = 'typescript';
    - Another unordered bullet
 
 ### Blockquote
-> Blockquote to the max`;
+> Blockquote to the max
 
+
+`;
 }

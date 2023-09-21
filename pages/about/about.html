@@ -7,8 +7,14 @@
 <ion-content padding>
   About Us
 
-  <h6>angular@{{ angularVersion }} | ngx-markdown@{{ ngxMarkdownVersion }}</h6>
   <br />
+  <br />
+  <br />
+  <br />
+
+  <markdown class="variable-binding" [data]="markdown"> </markdown>
+
+  <!--
 
   <textarea class="variable-textarea" [(ngModel)]="markdown"
   rows=20
@@ -16,24 +22,11 @@
   
   ></textarea>
 
-  <markdown class="variable-binding"
-  
-  data="markdown"
 
-  > </markdown>
-
-  <!--
-  <markdown class="variable-binding" [data]="markdown"></markdown>
+    <markdown class="variable-binding" [data]="markdown"></markdown>
 -->
 
   <ul>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
-    <li></li>
     <li></li>
   </ul>
 </ion-content>
